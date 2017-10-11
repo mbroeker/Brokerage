@@ -1,0 +1,8 @@
+.hg
+.DS_Store
+.idea/
+Podfile.lock
+Brokerage.xcodeproj/xcuserdata
+Brokerage.xcodeproj/project.xcworkspace/xcuserdata
+
+docs/
