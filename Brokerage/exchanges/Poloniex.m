@@ -36,7 +36,7 @@
         return nil;
     }
 
-    NSNumber *exchangeRate = [Broker fiatExchangeRate:fiatCurrencies];
+    NSNumber *exchangeRate = [Asset fiatExchangeRate:fiatCurrencies];
 
     if (!exchangeRate) {
         return nil;

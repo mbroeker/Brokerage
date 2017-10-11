@@ -72,15 +72,8 @@
         return nil;
     }
 
-    NSNumber *exchangeRate = [Broker fiatExchangeRate:fiatCurrencies];
-
-    if (!exchangeRate) {
-        return nil;
-    }
-
     NSString *asset1Fiat = [NSString stringWithFormat:@"%@_%@", ASSET_KEY(1), fiatCurrencies[0]];
     ticker[asset1Fiat] = asset1Ticker;
-    ticker[fiatCurrencies[1]] = @([exchangeRate doubleValue]);
 
     return ticker;
 }

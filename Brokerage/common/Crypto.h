@@ -7,7 +7,7 @@
 //
 
 #import "Crypto.h"
-#import "Brokerage.h"
+#import "Asset.h"
 
 @interface Crypto : NSObject
 + (NSString *)hmac:(NSString *)plainText withSecret:(NSString *)secret;

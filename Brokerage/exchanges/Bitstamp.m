@@ -53,6 +53,8 @@
     poloniexData[DEFAULT_ASK] = @(ask);
     poloniexData[DEFAULT_BID] = @(bid);
     poloniexData[DEFAULT_LAST] = @(last);
+    poloniexData[DEFAULT_BASE_VOLUME] = @(0);
+    poloniexData[DEFAULT_QUOTE_VOLUME] = @(0);
 
     // Poloniex liefert ausgerechnete Werte (50% sind halt 50 / 100 = 0.5)
     poloniexData[DEFAULT_PERCENT] = @(percent);

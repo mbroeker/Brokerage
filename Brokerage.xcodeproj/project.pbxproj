@@ -7,41 +7,41 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B2213F131F8D958E00F2C8CF /* Brokerage.h in Headers */ = {isa = PBXBuildFile; fileRef = B2213F121F8D958E00F2C8CF /* Brokerage.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B2213F1C1F8D95FE00F2C8CF /* JSON.h in Headers */ = {isa = PBXBuildFile; fileRef = B2213F1A1F8D95FE00F2C8CF /* JSON.h */; };
-		B2213F1D1F8D95FE00F2C8CF /* JSON.m in Sources */ = {isa = PBXBuildFile; fileRef = B2213F1B1F8D95FE00F2C8CF /* JSON.m */; };
-		B2213F1F1F8D963300F2C8CF /* ExchangeProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = B2213F1E1F8D963300F2C8CF /* ExchangeProtocol.h */; };
-		B2213F231F8D96A000F2C8CF /* Poloniex.m in Sources */ = {isa = PBXBuildFile; fileRef = B2213F211F8D96A000F2C8CF /* Poloniex.m */; };
-		B2213F261F8D96AF00F2C8CF /* Bittrex.h in Headers */ = {isa = PBXBuildFile; fileRef = B2213F241F8D96AF00F2C8CF /* Bittrex.h */; };
-		B2213F271F8D96AF00F2C8CF /* Bittrex.m in Sources */ = {isa = PBXBuildFile; fileRef = B2213F251F8D96AF00F2C8CF /* Bittrex.m */; };
-		B2213F321F8D972700F2C8CF /* Broker.h in Headers */ = {isa = PBXBuildFile; fileRef = B2213F301F8D972700F2C8CF /* Broker.h */; };
-		B2213F331F8D972700F2C8CF /* Broker.m in Sources */ = {isa = PBXBuildFile; fileRef = B2213F311F8D972700F2C8CF /* Broker.m */; };
-		B2213F361F8D994800F2C8CF /* Crypto.h in Headers */ = {isa = PBXBuildFile; fileRef = B2213F341F8D994800F2C8CF /* Crypto.h */; };
-		B2213F371F8D994800F2C8CF /* Crypto.m in Sources */ = {isa = PBXBuildFile; fileRef = B2213F351F8D994800F2C8CF /* Crypto.m */; };
-		B2213F3E1F8D9C9300F2C8CF /* Asset.h in Headers */ = {isa = PBXBuildFile; fileRef = B2213F3C1F8D9C9200F2C8CF /* Asset.h */; };
-		B2213F3F1F8D9C9300F2C8CF /* Asset.m in Sources */ = {isa = PBXBuildFile; fileRef = B2213F3D1F8D9C9200F2C8CF /* Asset.m */; };
-		B2213F431F8DA2DA00F2C8CF /* Bitstamp.m in Sources */ = {isa = PBXBuildFile; fileRef = B2213F411F8DA2DA00F2C8CF /* Bitstamp.m */; };
+		B2285C071F8ED43100BB95F0 /* Brokerage.h in Headers */ = {isa = PBXBuildFile; fileRef = B2285C061F8ED43100BB95F0 /* Brokerage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B2285C4A1F8EE0F300BB95F0 /* Bitstamp.h in Headers */ = {isa = PBXBuildFile; fileRef = B2285C3A1F8EE0F300BB95F0 /* Bitstamp.h */; };
+		B2285C4B1F8EE0F300BB95F0 /* Bitstamp.m in Sources */ = {isa = PBXBuildFile; fileRef = B2285C3B1F8EE0F300BB95F0 /* Bitstamp.m */; };
+		B2285C4C1F8EE0F300BB95F0 /* Bittrex.h in Headers */ = {isa = PBXBuildFile; fileRef = B2285C3C1F8EE0F300BB95F0 /* Bittrex.h */; };
+		B2285C4D1F8EE0F300BB95F0 /* Bittrex.m in Sources */ = {isa = PBXBuildFile; fileRef = B2285C3D1F8EE0F300BB95F0 /* Bittrex.m */; };
+		B2285C4E1F8EE0F300BB95F0 /* ExchangeProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = B2285C3E1F8EE0F300BB95F0 /* ExchangeProtocol.h */; };
+		B2285C4F1F8EE0F300BB95F0 /* Poloniex.h in Headers */ = {isa = PBXBuildFile; fileRef = B2285C3F1F8EE0F300BB95F0 /* Poloniex.h */; };
+		B2285C501F8EE0F300BB95F0 /* Poloniex.m in Sources */ = {isa = PBXBuildFile; fileRef = B2285C401F8EE0F300BB95F0 /* Poloniex.m */; };
+		B2285C591F8EE28400BB95F0 /* Asset.h in Headers */ = {isa = PBXBuildFile; fileRef = B2285C521F8EE28300BB95F0 /* Asset.h */; };
+		B2285C5A1F8EE28400BB95F0 /* Asset.m in Sources */ = {isa = PBXBuildFile; fileRef = B2285C531F8EE28300BB95F0 /* Asset.m */; };
+		B2285C5B1F8EE28400BB95F0 /* AssetConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = B2285C541F8EE28300BB95F0 /* AssetConstants.h */; };
+		B2285C5C1F8EE28400BB95F0 /* Crypto.h in Headers */ = {isa = PBXBuildFile; fileRef = B2285C551F8EE28400BB95F0 /* Crypto.h */; };
+		B2285C5D1F8EE28400BB95F0 /* Crypto.m in Sources */ = {isa = PBXBuildFile; fileRef = B2285C561F8EE28400BB95F0 /* Crypto.m */; };
+		B2285C5E1F8EE28400BB95F0 /* JSON.h in Headers */ = {isa = PBXBuildFile; fileRef = B2285C571F8EE28400BB95F0 /* JSON.h */; };
+		B2285C5F1F8EE28400BB95F0 /* JSON.m in Sources */ = {isa = PBXBuildFile; fileRef = B2285C581F8EE28400BB95F0 /* JSON.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B2213F0F1F8D958E00F2C8CF /* Brokerage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Brokerage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B2213F121F8D958E00F2C8CF /* Brokerage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Brokerage.h; sourceTree = "<group>"; };
-		B2213F141F8D958E00F2C8CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B2213F1A1F8D95FE00F2C8CF /* JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSON.h; sourceTree = "<group>"; };
-		B2213F1B1F8D95FE00F2C8CF /* JSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSON.m; sourceTree = "<group>"; };
-		B2213F1E1F8D963300F2C8CF /* ExchangeProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExchangeProtocol.h; sourceTree = "<group>"; };
-		B2213F211F8D96A000F2C8CF /* Poloniex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Poloniex.m; sourceTree = "<group>"; };
-		B2213F241F8D96AF00F2C8CF /* Bittrex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bittrex.h; sourceTree = "<group>"; };
-		B2213F251F8D96AF00F2C8CF /* Bittrex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Bittrex.m; sourceTree = "<group>"; };
-		B2213F301F8D972700F2C8CF /* Broker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Broker.h; sourceTree = "<group>"; };
-		B2213F311F8D972700F2C8CF /* Broker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Broker.m; sourceTree = "<group>"; };
-		B2213F341F8D994800F2C8CF /* Crypto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Crypto.h; sourceTree = "<group>"; };
-		B2213F351F8D994800F2C8CF /* Crypto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Crypto.m; sourceTree = "<group>"; };
-		B2213F3C1F8D9C9200F2C8CF /* Asset.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Asset.h; sourceTree = "<group>"; };
-		B2213F3D1F8D9C9200F2C8CF /* Asset.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Asset.m; sourceTree = "<group>"; };
-		B2213F411F8DA2DA00F2C8CF /* Bitstamp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Bitstamp.m; sourceTree = "<group>"; };
-		B2213F441F8DA69300F2C8CF /* Bitstamp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Bitstamp.h; sourceTree = "<group>"; };
-		B2213F451F8DB25900F2C8CF /* Poloniex.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Poloniex.h; sourceTree = "<group>"; };
+		B2285C061F8ED43100BB95F0 /* Brokerage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Brokerage.h; path = Brokerage/Brokerage.h; sourceTree = "<group>"; };
+		B2285C181F8EDD8100BB95F0 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Brokerage/Info.plist; sourceTree = "<group>"; };
+		B2285C3A1F8EE0F300BB95F0 /* Bitstamp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bitstamp.h; sourceTree = "<group>"; };
+		B2285C3B1F8EE0F300BB95F0 /* Bitstamp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Bitstamp.m; sourceTree = "<group>"; };
+		B2285C3C1F8EE0F300BB95F0 /* Bittrex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bittrex.h; sourceTree = "<group>"; };
+		B2285C3D1F8EE0F300BB95F0 /* Bittrex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Bittrex.m; sourceTree = "<group>"; };
+		B2285C3E1F8EE0F300BB95F0 /* ExchangeProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExchangeProtocol.h; sourceTree = "<group>"; };
+		B2285C3F1F8EE0F300BB95F0 /* Poloniex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Poloniex.h; sourceTree = "<group>"; };
+		B2285C401F8EE0F300BB95F0 /* Poloniex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Poloniex.m; sourceTree = "<group>"; };
+		B2285C521F8EE28300BB95F0 /* Asset.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Asset.h; sourceTree = "<group>"; };
+		B2285C531F8EE28300BB95F0 /* Asset.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Asset.m; sourceTree = "<group>"; };
+		B2285C541F8EE28300BB95F0 /* AssetConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AssetConstants.h; sourceTree = "<group>"; };
+		B2285C551F8EE28400BB95F0 /* Crypto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Crypto.h; sourceTree = "<group>"; };
+		B2285C561F8EE28400BB95F0 /* Crypto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Crypto.m; sourceTree = "<group>"; };
+		B2285C571F8EE28400BB95F0 /* JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSON.h; sourceTree = "<group>"; };
+		B2285C581F8EE28400BB95F0 /* JSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSON.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +58,10 @@
 		B2213F051F8D958D00F2C8CF = {
 			isa = PBXGroup;
 			children = (
-				B2213F111F8D958E00F2C8CF /* Brokerage */,
+				B2285C511F8EE28300BB95F0 /* common */,
+				B2285C391F8EE0F300BB95F0 /* exchanges */,
+				B2285C181F8EDD8100BB95F0 /* Info.plist */,
+				B2285C061F8ED43100BB95F0 /* Brokerage.h */,
 				B2213F101F8D958E00F2C8CF /* Products */,
 			);
 			sourceTree = "<group>";
@@ -71,28 +74,34 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		B2213F111F8D958E00F2C8CF /* Brokerage */ = {
+		B2285C391F8EE0F300BB95F0 /* exchanges */ = {
 			isa = PBXGroup;
 			children = (
-				B2213F3C1F8D9C9200F2C8CF /* Asset.h */,
-				B2213F3D1F8D9C9200F2C8CF /* Asset.m */,
-				B2213F441F8DA69300F2C8CF /* Bitstamp.h */,
-				B2213F411F8DA2DA00F2C8CF /* Bitstamp.m */,
-				B2213F241F8D96AF00F2C8CF /* Bittrex.h */,
-				B2213F251F8D96AF00F2C8CF /* Bittrex.m */,
-				B2213F301F8D972700F2C8CF /* Broker.h */,
-				B2213F311F8D972700F2C8CF /* Broker.m */,
-				B2213F121F8D958E00F2C8CF /* Brokerage.h */,
-				B2213F341F8D994800F2C8CF /* Crypto.h */,
-				B2213F351F8D994800F2C8CF /* Crypto.m */,
-				B2213F1E1F8D963300F2C8CF /* ExchangeProtocol.h */,
-				B2213F141F8D958E00F2C8CF /* Info.plist */,
-				B2213F1A1F8D95FE00F2C8CF /* JSON.h */,
-				B2213F1B1F8D95FE00F2C8CF /* JSON.m */,
-				B2213F451F8DB25900F2C8CF /* Poloniex.h */,
-				B2213F211F8D96A000F2C8CF /* Poloniex.m */,
+				B2285C3A1F8EE0F300BB95F0 /* Bitstamp.h */,
+				B2285C3B1F8EE0F300BB95F0 /* Bitstamp.m */,
+				B2285C3C1F8EE0F300BB95F0 /* Bittrex.h */,
+				B2285C3D1F8EE0F300BB95F0 /* Bittrex.m */,
+				B2285C3E1F8EE0F300BB95F0 /* ExchangeProtocol.h */,
+				B2285C3F1F8EE0F300BB95F0 /* Poloniex.h */,
+				B2285C401F8EE0F300BB95F0 /* Poloniex.m */,
 			);
-			path = Brokerage;
+			name = exchanges;
+			path = Brokerage/exchanges;
+			sourceTree = "<group>";
+		};
+		B2285C511F8EE28300BB95F0 /* common */ = {
+			isa = PBXGroup;
+			children = (
+				B2285C521F8EE28300BB95F0 /* Asset.h */,
+				B2285C531F8EE28300BB95F0 /* Asset.m */,
+				B2285C541F8EE28300BB95F0 /* AssetConstants.h */,
+				B2285C551F8EE28400BB95F0 /* Crypto.h */,
+				B2285C561F8EE28400BB95F0 /* Crypto.m */,
+				B2285C571F8EE28400BB95F0 /* JSON.h */,
+				B2285C581F8EE28400BB95F0 /* JSON.m */,
+			);
+			name = common;
+			path = Brokerage/common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -102,13 +111,15 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B2213F3E1F8D9C9300F2C8CF /* Asset.h in Headers */,
-				B2213F1C1F8D95FE00F2C8CF /* JSON.h in Headers */,
-				B2213F321F8D972700F2C8CF /* Broker.h in Headers */,
-				B2213F361F8D994800F2C8CF /* Crypto.h in Headers */,
-				B2213F131F8D958E00F2C8CF /* Brokerage.h in Headers */,
-				B2213F261F8D96AF00F2C8CF /* Bittrex.h in Headers */,
-				B2213F1F1F8D963300F2C8CF /* ExchangeProtocol.h in Headers */,
+				B2285C4F1F8EE0F300BB95F0 /* Poloniex.h in Headers */,
+				B2285C4C1F8EE0F300BB95F0 /* Bittrex.h in Headers */,
+				B2285C4A1F8EE0F300BB95F0 /* Bitstamp.h in Headers */,
+				B2285C5B1F8EE28400BB95F0 /* AssetConstants.h in Headers */,
+				B2285C591F8EE28400BB95F0 /* Asset.h in Headers */,
+				B2285C071F8ED43100BB95F0 /* Brokerage.h in Headers */,
+				B2285C5E1F8EE28400BB95F0 /* JSON.h in Headers */,
+				B2285C4E1F8EE0F300BB95F0 /* ExchangeProtocol.h in Headers */,
+				B2285C5C1F8EE28400BB95F0 /* Crypto.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -179,13 +190,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B2213F371F8D994800F2C8CF /* Crypto.m in Sources */,
-				B2213F1D1F8D95FE00F2C8CF /* JSON.m in Sources */,
-				B2213F271F8D96AF00F2C8CF /* Bittrex.m in Sources */,
-				B2213F431F8DA2DA00F2C8CF /* Bitstamp.m in Sources */,
-				B2213F3F1F8D9C9300F2C8CF /* Asset.m in Sources */,
-				B2213F331F8D972700F2C8CF /* Broker.m in Sources */,
-				B2213F231F8D96A000F2C8CF /* Poloniex.m in Sources */,
+				B2285C5D1F8EE28400BB95F0 /* Crypto.m in Sources */,
+				B2285C5F1F8EE28400BB95F0 /* JSON.m in Sources */,
+				B2285C4B1F8EE0F300BB95F0 /* Bitstamp.m in Sources */,
+				B2285C501F8EE0F300BB95F0 /* Poloniex.m in Sources */,
+				B2285C5A1F8EE28400BB95F0 /* Asset.m in Sources */,
+				B2285C4D1F8EE0F300BB95F0 /* Bittrex.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,6 +290,8 @@
 		B2213F181F8D958E00F2C8CF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Developer ID Application";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -291,6 +303,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = de.4customers.Brokerage;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
@@ -298,6 +311,8 @@
 		B2213F191F8D958E00F2C8CF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Developer ID Application";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -309,6 +324,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = de.4customers.Brokerage;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
@@ -332,6 +348,7 @@
 				B2213F191F8D958E00F2C8CF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

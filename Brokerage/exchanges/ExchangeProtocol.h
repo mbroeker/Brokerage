@@ -7,8 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "Broker.h"
 #import "Asset.h"
+#import "JSON.h"
 #import "Crypto.h"
 
 @protocol ExchangeProtocol <NSObject>
