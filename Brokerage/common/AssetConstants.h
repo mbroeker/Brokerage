@@ -43,31 +43,8 @@
 // ASSET DESCRIPTION KEYS
 #define DASHBOARD @"Dashboard"
 
-// FIAT CURRENCY KEYS
-#define EUR @"EUR"
-#define USD @"USD"
-#define GBP @"GBP"
-#define JPY @"JPY"
-#define CNY @"CNY"
-
 // SHARED USER DEFAULTS KEYS
-#define KEY_INITIAL_RATINGS @"initialRatings"
-#define KEY_CURRENT_SALDO @"currentSaldo"
-#define KEY_SALDO_URLS @"saldoUrls"
-#define KEY_CURRENT_ASSETS @"currentAssets"
-
-#define KEY_FIAT_CURRENCIES @"fiatCurrencies"
 #define KEY_DEFAULT_EXCHANGE @"defaultExchange"
-#define KEY_TRADING_WITH_CONFIRMATION @"tradingWithConfirmation"
-
-// CHECKPOINT KEYS
-#define CP_INITIAL_PRICE @"initialPrice"
-#define CP_CURRENT_PRICE @"currentPrice"
-#define CP_PERCENT @"percent"
-
-// REAL_PRICE KEYS
-#define RP_PRICE @"price"
-#define RP_REALPRICE @"realPrice"
-#define RP_CHANGE @"change"
+#define KEY_CURRENT_ASSETS @"currentAssets"
 
 #endif /* AssetConstants_h */
