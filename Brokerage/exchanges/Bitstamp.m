@@ -48,8 +48,9 @@
 
     NSMutableDictionary *poloniexData = [[NSMutableDictionary alloc] init];
 
-    poloniexData[DEFAULT_HIGH24] = @(high24);
-    poloniexData[DEFAULT_LOW24] = @(low24);
+    // High is Low and Low is HIGH
+    poloniexData[DEFAULT_HIGH24] = @(low24);
+    poloniexData[DEFAULT_LOW24] = @(high24);
     poloniexData[DEFAULT_ASK] = @(ask);
     poloniexData[DEFAULT_BID] = @(bid);
     poloniexData[DEFAULT_LAST] = @(last);
