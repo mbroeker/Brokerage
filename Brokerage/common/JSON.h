@@ -9,6 +9,12 @@
 #import <Foundation/Foundation.h>
 #import "AssetConstants.h"
 
+/**
+ * Handling JSON-Data
+ *
+ * @author      Markus Bröker<broeker.markus@googlemail.com>
+ * @copyright   Copyright (C) 2017 4customers UG
+ */
 @interface JSON : NSObject
 
 /**

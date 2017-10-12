@@ -9,6 +9,12 @@
 #import <Foundation/Foundation.h>
 #import "ExchangeProtocol.h"
 
+/**
+ * Default Operations on Bittrex Exchange
+ *
+ * @author      Markus Bröker<broeker.markus@googlemail.com>
+ * @copyright   Copyright (C) 2017 4customers UG
+ */
 @interface Bittrex : NSObject <ExchangeProtocol>
 
 @end

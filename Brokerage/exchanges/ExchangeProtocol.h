@@ -11,6 +11,12 @@
 #import "JSON.h"
 #import "Crypto.h"
 
+/**
+ * Default Protocol for Exchanges
+ *
+ * @author      Markus Bröker<broeker.markus@googlemail.com>
+ * @copyright   Copyright (C) 2017 4customers UG
+ */
 @protocol ExchangeProtocol <NSObject>
 
 /**

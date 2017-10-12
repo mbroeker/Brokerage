@@ -9,6 +9,12 @@
 #import <Foundation/Foundation.h>
 #import "ExchangeProtocol.h"
 
+/**
+ * Default Operations on Poloniex Exchange
+ *
+ * @author      Markus Bröker<broeker.markus@googlemail.com>
+ * @copyright   Copyright (C) 2017 4customers UG
+ */
 @interface Poloniex : NSObject <ExchangeProtocol>
 
 @end

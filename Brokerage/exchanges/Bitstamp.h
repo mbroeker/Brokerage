@@ -9,6 +9,12 @@
 #import <Foundation/Foundation.h>
 #import "ExchangeProtocol.h"
 
+/**
+ * Bitstamp Ticker and Trading Stub
+ *
+ * @author      Markus Bröker<broeker.markus@googlemail.com>
+ * @copyright   Copyright (C) 2017 4customers UG
+ */
 @interface Bitstamp : NSObject <ExchangeProtocol>
 
 @end
