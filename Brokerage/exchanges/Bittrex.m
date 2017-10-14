@@ -236,7 +236,7 @@
  * @param apikey NSDictionary*
  * @return NSArray*
  */
-+ (NSArray *)openOrder:(NSDictionary *)apiKey {
++ (NSArray *)openOrders:(NSDictionary *)apiKey {
     if (apiKey == nil) {
         return nil;
     }

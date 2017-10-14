@@ -36,15 +36,8 @@
         return nil;
     }
 
-    NSNumber *exchangeRate = [Asset fiatExchangeRate:fiatCurrencies];
-
-    if (!exchangeRate) {
-        return nil;
-    }
-
     NSString *asset1Fiat = [NSString stringWithFormat:@"%@_%@", ASSET_KEY(1), fiatCurrencies[0]];
     ticker[asset1Fiat] = asset1Ticker;
-    ticker[fiatCurrencies[1]] = @([exchangeRate doubleValue]);
 
     return ticker;
 }
@@ -157,7 +150,7 @@
  * @param apikey NSDictionary*
  * @return NSArray*
  */
-+ (NSArray *)openOrder:(NSDictionary *)apiKey {
++ (NSArray *)openOrders:(NSDictionary *)apiKey {
 
     if (apiKey == nil) {
         return nil;

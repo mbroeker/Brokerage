@@ -23,3 +23,5 @@ FOUNDATION_EXPORT const unsigned char BrokerageVersionString[];
 #import <Brokerage/exchanges/Bitstamp.h>
 #import <Brokerage/exchanges/Bittrex.h>
 #import <Brokerage/exchanges/Poloniex.h>
+
+#import <Brokerage/broker/Broker.h>

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B22182161F9137FB000383E4 /* Broker.h in Headers */ = {isa = PBXBuildFile; fileRef = B22182141F9137FB000383E4 /* Broker.h */; };
+		B22182171F9137FB000383E4 /* Broker.m in Sources */ = {isa = PBXBuildFile; fileRef = B22182151F9137FB000383E4 /* Broker.m */; };
 		B2285C071F8ED43100BB95F0 /* Brokerage.h in Headers */ = {isa = PBXBuildFile; fileRef = B2285C061F8ED43100BB95F0 /* Brokerage.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B2285C4A1F8EE0F300BB95F0 /* Bitstamp.h in Headers */ = {isa = PBXBuildFile; fileRef = B2285C3A1F8EE0F300BB95F0 /* Bitstamp.h */; };
 		B2285C4B1F8EE0F300BB95F0 /* Bitstamp.m in Sources */ = {isa = PBXBuildFile; fileRef = B2285C3B1F8EE0F300BB95F0 /* Bitstamp.m */; };
@@ -26,6 +28,8 @@
 
 /* Begin PBXFileReference section */
 		B2213F0F1F8D958E00F2C8CF /* Brokerage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Brokerage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B22182141F9137FB000383E4 /* Broker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Broker.h; sourceTree = "<group>"; };
+		B22182151F9137FB000383E4 /* Broker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Broker.m; sourceTree = "<group>"; };
 		B2285C061F8ED43100BB95F0 /* Brokerage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Brokerage.h; path = Brokerage/Brokerage.h; sourceTree = "<group>"; };
 		B2285C181F8EDD8100BB95F0 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Brokerage/Info.plist; sourceTree = "<group>"; };
 		B2285C3A1F8EE0F300BB95F0 /* Bitstamp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bitstamp.h; sourceTree = "<group>"; };
@@ -58,6 +62,7 @@
 		B2213F051F8D958D00F2C8CF = {
 			isa = PBXGroup;
 			children = (
+				B22182131F9137DC000383E4 /* broker */,
 				B2285C511F8EE28300BB95F0 /* common */,
 				B2285C391F8EE0F300BB95F0 /* exchanges */,
 				B2285C181F8EDD8100BB95F0 /* Info.plist */,
@@ -72,6 +77,16 @@
 				B2213F0F1F8D958E00F2C8CF /* Brokerage.framework */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		B22182131F9137DC000383E4 /* broker */ = {
+			isa = PBXGroup;
+			children = (
+				B22182141F9137FB000383E4 /* Broker.h */,
+				B22182151F9137FB000383E4 /* Broker.m */,
+			);
+			name = broker;
+			path = Brokerage/broker;
 			sourceTree = "<group>";
 		};
 		B2285C391F8EE0F300BB95F0 /* exchanges */ = {
@@ -120,6 +135,7 @@
 				B2285C5E1F8EE28400BB95F0 /* JSON.h in Headers */,
 				B2285C4E1F8EE0F300BB95F0 /* ExchangeProtocol.h in Headers */,
 				B2285C5C1F8EE28400BB95F0 /* Crypto.h in Headers */,
+				B22182161F9137FB000383E4 /* Broker.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -193,6 +209,7 @@
 				B2285C5D1F8EE28400BB95F0 /* Crypto.m in Sources */,
 				B2285C5F1F8EE28400BB95F0 /* JSON.m in Sources */,
 				B2285C4B1F8EE0F300BB95F0 /* Bitstamp.m in Sources */,
+				B22182171F9137FB000383E4 /* Broker.m in Sources */,
 				B2285C501F8EE0F300BB95F0 /* Poloniex.m in Sources */,
 				B2285C5A1F8EE28400BB95F0 /* Asset.m in Sources */,
 				B2285C4D1F8EE0F300BB95F0 /* Bittrex.m in Sources */,
@@ -298,6 +315,7 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_VERSION = A;
+				"HEADER_SEARCH_PATHS[arch=*]" = "../**";
 				INFOPLIST_FILE = Brokerage/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
@@ -319,6 +337,7 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_VERSION = A;
+				"HEADER_SEARCH_PATHS[arch=*]" = "../**";
 				INFOPLIST_FILE = Brokerage/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";

@@ -19,6 +19,7 @@
 #define ASSET_DESC(row) [Asset assetString:row withIndex:1]
 
 // Definition der verfügbaren Börsen
+#define EXCHANGE_BITSTAMP @"BITSTAMP_EXCHANGE"
 #define EXCHANGE_BITTREX @"BITTREX_EXCHANGE"
 #define EXCHANGE_POLONIEX @"POLONIEX_EXCHANGE"
 
