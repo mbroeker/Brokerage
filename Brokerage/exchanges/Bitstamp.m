@@ -28,18 +28,18 @@
     }
 
     // aktuelle Anfragen und Käufe
-    double ask = 1 / [theirData[@"ask"] doubleValue];
-    double bid = 1 / [theirData[@"bid"] doubleValue];
+    double ask = [theirData[@"ask"] doubleValue];
+    double bid = [theirData[@"bid"] doubleValue];
 
     // 24h Change
-    double high24 = 1 / [theirData[@"high"] doubleValue];
-    double low24 = 1 / [theirData[@"low"] doubleValue];
+    double high24 = [theirData[@"high"] doubleValue];
+    double low24 = [theirData[@"low"] doubleValue];
 
     // aktueller Kurs
-    double last = 1 / [theirData[@"last"] doubleValue];
+    double last = [theirData[@"last"] doubleValue];
 
     // Heutiger Eröffnungskurs
-    double open = 1 / [theirData[@"open"] doubleValue];
+    double open = [theirData[@"open"] doubleValue];
     double percent = 0;
 
     if (open != 0) {
@@ -48,9 +48,8 @@
 
     NSMutableDictionary *poloniexData = [[NSMutableDictionary alloc] init];
 
-    // High is Low and Low is HIGH
-    poloniexData[DEFAULT_HIGH24] = @(low24);
-    poloniexData[DEFAULT_LOW24] = @(high24);
+    poloniexData[DEFAULT_HIGH24] = @(high24);
+    poloniexData[DEFAULT_LOW24] = @(low24);
     poloniexData[DEFAULT_ASK] = @(ask);
     poloniexData[DEFAULT_BID] = @(bid);
     poloniexData[DEFAULT_LAST] = @(last);
@@ -106,7 +105,7 @@
  * @param orderId NSString*
  * @return BOOL
  */
-+ (NSArray *)openOrder:(NSDictionary *)apiKey {
++ (NSArray *)openOrders:(NSDictionary *)apiKey {
     return nil;
 }
 
