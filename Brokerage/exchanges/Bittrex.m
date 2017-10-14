@@ -13,41 +13,27 @@
 
 /**
  *
- * @param assetsArray NSArray*
  * @param fiatCurrencies NSArray*
  * @return NSDictionary*
  */
-+ (NSDictionary *)ticker:(NSArray *)assetsArray forFiatCurrencies:(NSArray *)fiatCurrencies {
++ (NSDictionary *)ticker:(NSArray *)fiatCurrencies {
 
     if (![JSON isInternetConnection]) {
         return nil;
     }
 
+    NSString *jsonURL = [NSString stringWithFormat:@"https://bittrex.com/api/v1.1/public/getmarketsummaries"];
+    NSMutableDictionary *innerTicker = [[JSON jsonRequest:jsonURL] mutableCopy];
+
     NSMutableDictionary *ticker = [[NSMutableDictionary alloc] init];
-    for (id key in assetsArray) {
-        if ([key isEqualToString:ASSET_KEY(1)]) { continue; }
 
-        NSString *pair = [NSString stringWithFormat:@"%@-%@", [ASSET_KEY(1) lowercaseString], [key lowercaseString]];
-        NSString *jsonURL = [NSString stringWithFormat:@"https://bittrex.com/api/v1.1/public/getmarketsummary?market=%@", pair];
+    if (!innerTicker[@"result"]) {
+        return nil;
+    }
 
-        NSMutableDictionary *innerTicker = [[JSON jsonRequest:jsonURL] mutableCopy];
+    NSDictionary *result = innerTicker[@"result"];
 
-        if (!innerTicker[@"result"]) {
-            return nil;
-        }
-
-        if ([innerTicker[@"message"] isEqualToString:@"INVALID_MARKET"]) {
-            return @{
-                DEFAULT_ERROR: [NSString stringWithFormat:@"Invalid Market on Bittrex: %@/%@", ASSET_KEY(1), key]
-            };
-        }
-
-        NSDictionary *data = innerTicker[@"result"][0];
-
-        if (!data[@"MarketName"]) {
-            return nil;
-        }
-
+    for (id data in result) {
         NSString *marketName = data[@"MarketName"];
 
         marketName = [marketName stringByReplacingOccurrencesOfString:@"-" withString:@"_"];
@@ -66,7 +52,7 @@
         };
     }
 
-    NSDictionary *asset1Ticker = [Bitstamp ticker:assetsArray forFiatCurrencies:fiatCurrencies];
+    NSDictionary *asset1Ticker = [Bitstamp ticker:fiatCurrencies];
 
     if (!asset1Ticker) {
         return nil;

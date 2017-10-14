@@ -13,11 +13,10 @@
 
 /**
  *
- * @param assetsArray NSArray*
  * @param fiatCurrencies NSArray*
  * @return NSDictionary*
  */
-+ (NSDictionary *)ticker:(NSArray *)assetsArray forFiatCurrencies:(NSArray *)fiatCurrencies {
++ (NSDictionary *)ticker:(NSArray *)fiatCurrencies {
     NSString *jsonURL = @"https://poloniex.com/public?command=returnTicker";
 
     if (![JSON isInternetConnection]) {
@@ -30,7 +29,7 @@
         return nil;
     }
 
-    NSDictionary *asset1Ticker = [Bitstamp ticker:assetsArray forFiatCurrencies:fiatCurrencies];
+    NSDictionary *asset1Ticker = [Bitstamp ticker:fiatCurrencies];
 
     if (!asset1Ticker) {
         return nil;

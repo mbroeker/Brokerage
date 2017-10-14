@@ -12,11 +12,10 @@
 
 /**
  *
- * @param assetsArray NSArray*
  * @param fiatCurrencies NSArray*
  * @return NSDictionary*
  */
-+ (NSDictionary *)ticker:(NSArray *)assetsArray forFiatCurrencies:(NSArray *)fiatCurrencies {
++ (NSDictionary *)ticker:(NSArray *)fiatCurrencies {
     NSString *jsonURL = [NSString stringWithFormat:@"https://www.bitstamp.net/api/v2/ticker/%@%@/", [ASSET_KEY(1) lowercaseString], [fiatCurrencies[0] lowercaseString]];
 
     NSDictionary *theirData = [JSON jsonRequest:jsonURL];

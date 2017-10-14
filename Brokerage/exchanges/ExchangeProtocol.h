@@ -22,10 +22,9 @@
 /**
  *
  * @param assetsArray NSArray*
- * @param fiatCurrencies NSArray*
  * @return NSDictionary*
  */
-+ (NSDictionary *)ticker:(NSArray *)assetsArray forFiatCurrencies:(NSArray *)fiatCurrencies;
++ (NSDictionary *)ticker:(NSArray *)fiatCurrencies;
 
 /**
  *
