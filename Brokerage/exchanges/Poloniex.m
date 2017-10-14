@@ -36,7 +36,7 @@
     }
 
     NSString *asset1Fiat = [NSString stringWithFormat:@"%@_%@", ASSET_KEY(1), fiatCurrencies[0]];
-    ticker[asset1Fiat] = asset1Ticker;
+    ticker[asset1Fiat] = asset1Ticker[asset1Fiat];
 
     return ticker;
 }

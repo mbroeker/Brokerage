@@ -58,7 +58,11 @@
     // Poloniex liefert ausgerechnete Werte (50% sind halt 50 / 100 = 0.5)
     poloniexData[DEFAULT_PERCENT] = @(percent);
 
-    return poloniexData;
+    NSString *pair = [NSString stringWithFormat:@"%@_%@", ASSET_KEY(1), fiatCurrencies[0]];
+
+    return @{
+        pair: poloniexData
+    };
 }
 
 /**
