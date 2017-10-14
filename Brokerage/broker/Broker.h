@@ -8,20 +8,34 @@
 
 #import <Foundation/Foundation.h>
 
+/**
+ * A common Broker for various exchanges...
+ *
+ * @author      Markus Bröker<broeker.markus@googlemail.com>
+ * @copyright   Copyright (C) 2017 4customers UG
+ */
 @interface Broker : NSObject
 
 /**
+ * Add a static class, eg a class which implements the ExchangeProtocol Delegate
  *
+ * @param key
+ * @param exchange
  */
 - (void)addExchange:(NSString *)key exchange:(id)exchange;
 
 /**
+ * Remove a static class by name
  *
+ * @param key
  */
 - (void)removeExchange:(NSString *)key;
 
 /**
+ * Get the implementation of an exchange as a static class
  *
+ * @param key
+ * @return id
  */
 - (id)exchange:(NSString *)key;
 

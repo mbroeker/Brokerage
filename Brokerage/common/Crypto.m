@@ -1,5 +1,5 @@
 //
-//  JSON+Crypto.m
+//  Crypto.m
 //  Brokerage
 //
 //  Created by Markus Bröker on 11.10.17.
@@ -14,6 +14,10 @@
 
 /**
  * HMAC SHA512
+ *
+ * @param plainText
+ * @param secret
+ * @return NSString*
  */
 + (NSString *)hmac:(NSString *)plainText withSecret:(NSString *)secret {
     NSDebug(@"JSON::hmac");

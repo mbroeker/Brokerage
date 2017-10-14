@@ -12,6 +12,7 @@
 @implementation Bittrex
 
 /**
+ * Retrieve all ticker data from Bittrex Exchange
  *
  * @param fiatCurrencies NSArray*
  * @return NSDictionary*
@@ -217,7 +218,7 @@
 }
 
 /**
- * openOrder via API-KEY
+ * Get all open orders via API-KEY
  *
  * @param apikey NSDictionary*
  * @return NSArray*
@@ -266,7 +267,7 @@
 }
 
 /**
- * Cancel via API-KEY
+ * Cancel via API-KEY and orderId
  *
  * @param apiKey NSDictionary*
  * @param orderId NSString*
