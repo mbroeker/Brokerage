@@ -12,7 +12,7 @@
 #import "Poloniex.h"
 
 @implementation Broker {
-    NSMutableDictionary<ExchangeProtocol> *exchanges;
+    NSMutableDictionary <ExchangeProtocol> *exchanges;
 }
 
 /**
@@ -42,7 +42,7 @@
  * @param key (NSString*)
  * @param exchange (id)
  */
-- (void)addExchange:(NSString *)key exchange:(id<ExchangeProtocol>)exchange {
+- (void)addExchange:(NSString *)key exchange:(id <ExchangeProtocol>)exchange {
     exchanges[key] = exchange;
 }
 
@@ -56,7 +56,7 @@
 /**
  * @param key
  */
-- (id<ExchangeProtocol>)exchange:(NSString *)key {
+- (id <ExchangeProtocol>)exchange:(NSString *)key {
     return exchanges[key];
 }
 

@@ -23,7 +23,7 @@
  * @param key
  * @param exchange
  */
-- (void)addExchange:(NSString *)key exchange:(id<ExchangeProtocol>)exchange;
+- (void)addExchange:(NSString *)key exchange:(id <ExchangeProtocol>)exchange;
 
 /**
  * Remove a static class by name
@@ -38,6 +38,6 @@
  * @param key
  * @return id
  */
-- (id<ExchangeProtocol>)exchange:(NSString *)key;
+- (id <ExchangeProtocol>)exchange:(NSString *)key;
 
 @end
