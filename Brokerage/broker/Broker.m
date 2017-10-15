@@ -12,9 +12,12 @@
 #import "Poloniex.h"
 
 @implementation Broker {
-    NSMutableDictionary *exchanges;
+    NSMutableDictionary<ExchangeProtocol> *exchanges;
 }
 
+/**
+ * Default Constructor
+ */
 - (id)init {
     return [self initWithExchanges:@{
         EXCHANGE_BITTREX: [Bittrex class],
@@ -39,7 +42,7 @@
  * @param key (NSString*)
  * @param exchange (id)
  */
-- (void)addExchange:(NSString *)key exchange:(id)exchange {
+- (void)addExchange:(NSString *)key exchange:(id<ExchangeProtocol>)exchange {
     exchanges[key] = exchange;
 }
 
@@ -53,7 +56,7 @@
 /**
  * @param key
  */
-- (id)exchange:(NSString *)key {
+- (id<ExchangeProtocol>)exchange:(NSString *)key {
     return exchanges[key];
 }
 

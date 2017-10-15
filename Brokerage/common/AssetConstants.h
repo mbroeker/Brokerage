@@ -26,6 +26,8 @@
 #define KEY @"Key"
 #define SECRET @"Secret"
 
+#define DEFAULT_EXCHANGE @"defaultExchange"
+
 #define DEFAULT_ASK @"lowestAsk"
 #define DEFAULT_BID @"highestBid"
 #define DEFAULT_LOW24 @"low24hr"
