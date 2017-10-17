@@ -16,12 +16,12 @@
  * @return NSDictionary*
  */
 + (NSDictionary *)ticker:(NSArray *)fiatCurrencies {
-    NSString *jsonURL = [NSString stringWithFormat:@"https://www.bitstamp.net/api/v2/ticker/%@%@/", [ASSET_KEY(1) lowercaseString], [fiatCurrencies[0] lowercaseString]];
+    NSString *jsonURL = [NSString stringWithFormat:@"https://www.bitstamp.net/api/v2/ticker/%@%@/", [ASSET_KEY lowercaseString], [fiatCurrencies[0] lowercaseString]];
 
     NSDictionary *theirData = [JSON jsonRequest:jsonURL];
 
     if (!theirData[@"last"]) {
-        NSLog(@"API-ERROR: Cannot retrieve exchange rates for %@/%@", ASSET_KEY(1), fiatCurrencies[0]);
+        NSLog(@"API-ERROR: Cannot retrieve exchange rates for %@/%@", ASSET_KEY, fiatCurrencies[0]);
 
         return nil;
     }
@@ -58,7 +58,7 @@
     // Poloniex liefert ausgerechnete Werte (50% sind halt 50 / 100 = 0.5)
     poloniexData[DEFAULT_PERCENT] = @(percent);
 
-    NSString *pair = [NSString stringWithFormat:@"%@_%@", ASSET_KEY(1), fiatCurrencies[0]];
+    NSString *pair = [NSString stringWithFormat:@"%@_%@", ASSET_KEY, fiatCurrencies[0]];
 
     return @{
         pair: poloniexData

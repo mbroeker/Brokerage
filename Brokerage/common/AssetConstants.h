@@ -15,13 +15,12 @@
     #define NSDebug(...)
 #endif
 
-#define ASSET_KEY(row) [Asset assetString:row withIndex:0]
-#define ASSET_DESC(row) [Asset assetString:row withIndex:1]
-
 // Definition der verfügbaren Börsen
 #define EXCHANGE_BITSTAMP @"BITSTAMP_EXCHANGE"
 #define EXCHANGE_BITTREX @"BITTREX_EXCHANGE"
 #define EXCHANGE_POLONIEX @"POLONIEX_EXCHANGE"
+
+#define ASSET_KEY @"BTC"
 
 #define KEY @"Key"
 #define SECRET @"Secret"

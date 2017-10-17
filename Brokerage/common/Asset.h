@@ -17,21 +17,6 @@
  */
 @interface Asset : NSObject
 
-
-/**
- *
- * @return NSArray*
- */
-+ (NSArray *)initialAssets;
-
-/**
- *
- * @param row unsigned int
- * @param index unsigned int
- * @return NSString*
- */
-+ (NSString *)assetString:(unsigned int)row withIndex:(unsigned int)index;
-
 /**
  *
  * @param fiatCurrencies NSArray*
