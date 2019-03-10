@@ -62,29 +62,39 @@
         [request setHTTPBody:data];
     }
 
-    __block NSMutableDictionary *result;
-    __block dispatch_semaphore_t lock = dispatch_semaphore_create(0);
+    NSMutableDictionary *result = nil;
 
-    NSURLSession *session = [NSURLSession sharedSession];
-    NSURLSessionDataTask *dataTask = [session dataTaskWithRequest:request completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
-        NSString *requestReply = [[NSString alloc] initWithData:data encoding:NSASCIIStringEncoding];
+    @autoreleasepool {
+        __block NSMutableDictionary *jsonResult = nil;
+        __block dispatch_semaphore_t lock = dispatch_semaphore_create(0);
 
-        NSData *jsonData = [requestReply dataUsingEncoding:NSUTF8StringEncoding];
-        NSError *jsonError;
+        NSURLSession *session = [NSURLSession sharedSession];
+        NSURLSessionDataTask *dataTask = [session dataTaskWithRequest:request completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
+            NSString *requestReply = [[NSString alloc] initWithData:data encoding:NSASCIIStringEncoding];
 
-        result = [NSJSONSerialization JSONObjectWithData:jsonData options:NSJSONReadingMutableLeaves error:&jsonError];
-        if (jsonError) {
-            NSDebug(@"JSON-ERROR for URL %@\n%@", jsonURL, [jsonError description]);
+            NSData *jsonData = [requestReply dataUsingEncoding:NSUTF8StringEncoding];
+            NSError *jsonError;
+
+            jsonResult = [NSJSONSerialization JSONObjectWithData:jsonData options:NSJSONReadingMutableContainers error:&jsonError];
+            if (jsonError) {
+                NSDebug(@"JSON-ERROR for URL %@\n%@", jsonURL, [jsonError description]);
+            }
+
+            dispatch_semaphore_signal(lock);
+
+        }];
+
+        [dataTask resume];
+        [session finishTasksAndInvalidate];
+
+        // Wait 15 seconds for the request to finish: That's more than enough and better than DISPATCH_TIME_FOREVER
+        dispatch_semaphore_wait(lock, dispatch_time(DISPATCH_TIME_NOW, 15 * NSEC_PER_SEC));
+
+        if (jsonResult != nil) {
+            result = [jsonResult copy];
+            [jsonResult removeAllObjects];
         }
-
-        dispatch_semaphore_signal(lock);
-
-    }];
-
-    [dataTask resume];
-
-    // Wait 15 seconds for the request to finish: That's more than enough and better than DISPATCH_TIME_FOREVER
-    dispatch_semaphore_wait(lock, dispatch_time(DISPATCH_TIME_NOW, 15 * NSEC_PER_SEC));
+    }
 
     return result;
 }
