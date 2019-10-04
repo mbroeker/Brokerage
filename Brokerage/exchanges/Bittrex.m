@@ -39,6 +39,11 @@
 
         marketName = [marketName stringByReplacingOccurrencesOfString:@"-" withString:@"_"];
 
+        // Filter BTC related assets
+        if (![marketName hasPrefix:@"BTC_"]) {
+            continue;
+        }
+
         double percent = ([data[@"Last"] doubleValue] / [data[@"PrevDay"] doubleValue]) - 1;
 
         ticker[marketName] = @{
@@ -151,11 +156,11 @@
     time_t t = 1975 * time(NULL);
     NSString *nonce = [NSString stringWithFormat:@"%ld", t];
     NSString *jsonURL = [NSString stringWithFormat:@"https://bittrex.com/api/v1.1/market/buylimit?apikey=%@&market=%@&quantity=%@&rate=%@&nonce=%@",
-        apiKey[KEY],
-        bittrexCurrencyPair,
-        bittrexAmount,
-        bittrexRate,
-        nonce
+       apiKey[KEY],
+       bittrexCurrencyPair,
+       bittrexAmount,
+       bittrexRate,
+       nonce
     ];
 
     NSMutableDictionary *header = [[NSMutableDictionary alloc] init];
@@ -200,11 +205,11 @@
     time_t t = 1975 * time(NULL);
     NSString *nonce = [NSString stringWithFormat:@"%ld", t];
     NSString *jsonURL = [NSString stringWithFormat:@"https://bittrex.com/api/v1.1/market/selllimit?apikey=%@&market=%@&quantity=%@&rate=%@&nonce=%@",
-        apiKey[KEY],
-        bittrexCurrencyPair,
-        bittrexAmount,
-        bittrexRate,
-        nonce
+       apiKey[KEY],
+       bittrexCurrencyPair,
+       bittrexAmount,
+       bittrexRate,
+       nonce
     ];
 
     NSMutableDictionary *header = [[NSMutableDictionary alloc] init];
@@ -241,8 +246,8 @@
     time_t t = 1975 * time(NULL);
     NSString *nonce = [NSString stringWithFormat:@"%ld", t];
     NSString *jsonURL = [NSString stringWithFormat:@"https://bittrex.com/api/v1.1/market/getopenorders?apikey=%@&nonce=%@",
-        apiKey[KEY],
-        nonce
+       apiKey[KEY],
+       nonce
     ];
 
     NSMutableDictionary *header = [[NSMutableDictionary alloc] init];
@@ -292,9 +297,9 @@
     time_t t = 1975 * time(NULL);
     NSString *nonce = [NSString stringWithFormat:@"%ld", t];
     NSString *jsonURL = [NSString stringWithFormat:@"https://bittrex.com/api/v1.1/market/cancel?apikey=%@&uuid=%@&nonce=%@",
-        apiKey[KEY],
-        orderId,
-        nonce
+       apiKey[KEY],
+       orderId,
+       nonce
     ];
 
     NSMutableDictionary *header = [[NSMutableDictionary alloc] init];
