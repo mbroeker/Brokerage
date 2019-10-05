@@ -39,8 +39,13 @@
 
         marketName = [marketName stringByReplacingOccurrencesOfString:@"-" withString:@"_"];
 
-        // Filter BTC related assets
-        if (![marketName hasPrefix:@"BTC_"]) {
+        // Filter disabled markets
+        if (![data[@"Volume"] isKindOfClass:[NSNumber class]]) {
+            continue;
+        }
+
+        // Filter deactivated assets
+        if ([data[@"Volume"] doubleValue] == 0.0) {
             continue;
         }
 
